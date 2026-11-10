@@ -1,0 +1,85 @@
+{
+  "_meta": {
+    "imagem": "backgrounds/mapa_mundi_v2.webp",
+    "tamanho": {
+      "w": 2560,
+      "h": 1440
+    },
+    "coords": "pixels no JPG final (origem no canto superior esquerdo)",
+    "fonte_marcacao": "render 1280x720 (x_fonte, y_fonte); escala 2x para o JPG final",
+    "regioes": [
+      "vila_inicial",
+      "floresta_elfica",
+      "cidade_portuaria",
+      "capital_real",
+      "picos_gelados",
+      "ilhas_flutuantes",
+      "vulcao"
+    ]
+  },
+  "pontos": [
+    {
+      "id": "floresta_elfica",
+      "nome": "Floresta Élfica",
+      "tipo": "regiao",
+      "x": 320,
+      "y": 560,
+      "x_fonte": 160,
+      "y_fonte": 280
+    },
+    {
+      "id": "vila_inicial",
+      "nome": "Vila inicial",
+      "tipo": "regiao",
+      "x": 1120,
+      "y": 600,
+      "x_fonte": 560,
+      "y_fonte": 300
+    },
+    {
+      "id": "picos_gelados",
+      "nome": "Picos gelados",
+      "tipo": "regiao",
+      "x": 1040,
+      "y": 160,
+      "x_fonte": 520,
+      "y_fonte": 80
+    },
+    {
+      "id": "ilhas_flutuantes",
+      "nome": "Ilhas flutuantes",
+      "tipo": "regiao",
+      "x": 560,
+      "y": 180,
+      "x_fonte": 280,
+      "y_fonte": 90
+    },
+    {
+      "id": "cidade_portuaria",
+      "nome": "Cidade portuária",
+      "tipo": "regiao",
+      "x": 1240,
+      "y": 1120,
+      "x_fonte": 620,
+      "y_fonte": 560
+    },
+    {
+      "id": "capital_real",
+      "nome": "Capital real",
+      "tipo": "regiao",
+      "x": 1920,
+      "y": 720,
+      "x_fonte": 960,
+      "y_fonte": 360
+    },
+    {
+      "id": "vulcao",
+      "nome": "Vulcão",
+      "tipo": "regiao",
+      "x": 2080,
+      "y": 160,
+      "x_fonte": 1040,
+      "y_fonte": 80
+    }
+  ]
+}

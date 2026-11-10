@@ -1,0 +1,467 @@
+{
+  "_meta": {
+    "cabelo1": "curto",
+    "cabelo2": "longo",
+    "cabelo3_m": "raspado",
+    "cabelo3_f": "rabo de cavalo",
+    "coords": "pixels no PNG final (origem no canto superior esquerdo)",
+    "cabeca": "caixa x,y,w,h para recortar o retrato",
+    "pes": "ponto x,y do meio da base dos pés, para alinhar ao chão"
+  },
+  "paladino_m_cabelo1": {
+    "cabeca": {
+      "x": 129,
+      "y": 18,
+      "w": 155,
+      "h": 118
+    },
+    "pes": {
+      "x": 213,
+      "y": 427
+    },
+    "estilo": "curto",
+    "classe": "paladino",
+    "genero": "m",
+    "tamanho": {
+      "w": 512,
+      "h": 446
+    }
+  },
+  "paladino_m_cabelo2": {
+    "cabeca": {
+      "x": 130,
+      "y": 17,
+      "w": 153,
+      "h": 118
+    },
+    "pes": {
+      "x": 213,
+      "y": 425
+    },
+    "estilo": "longo",
+    "classe": "paladino",
+    "genero": "m",
+    "tamanho": {
+      "w": 512,
+      "h": 444
+    }
+  },
+  "paladino_m_cabelo3": {
+    "cabeca": {
+      "x": 127,
+      "y": 17,
+      "w": 151,
+      "h": 117
+    },
+    "pes": {
+      "x": 213,
+      "y": 421
+    },
+    "estilo": "raspado",
+    "classe": "paladino",
+    "genero": "m",
+    "tamanho": {
+      "w": 512,
+      "h": 440
+    }
+  },
+  "paladino_f_cabelo1": {
+    "cabeca": {
+      "x": 136,
+      "y": 18,
+      "w": 148,
+      "h": 120
+    },
+    "pes": {
+      "x": 213,
+      "y": 435
+    },
+    "estilo": "curto",
+    "classe": "paladino",
+    "genero": "f",
+    "tamanho": {
+      "w": 512,
+      "h": 454
+    }
+  },
+  "paladino_f_cabelo2": {
+    "cabeca": {
+      "x": 114,
+      "y": 17,
+      "w": 172,
+      "h": 119
+    },
+    "pes": {
+      "x": 215,
+      "y": 430
+    },
+    "estilo": "longo",
+    "classe": "paladino",
+    "genero": "f",
+    "tamanho": {
+      "w": 512,
+      "h": 449
+    }
+  },
+  "paladino_f_cabelo3": {
+    "cabeca": {
+      "x": 115,
+      "y": 17,
+      "w": 170,
+      "h": 120
+    },
+    "pes": {
+      "x": 213,
+      "y": 433
+    },
+    "estilo": "rabo de cavalo",
+    "classe": "paladino",
+    "genero": "f",
+    "tamanho": {
+      "w": 512,
+      "h": 452
+    }
+  },
+  "berserker_m_cabelo1": {
+    "cabeca": {
+      "x": 139,
+      "y": 19,
+      "w": 194,
+      "h": 141
+    },
+    "pes": {
+      "x": 221,
+      "y": 468
+    },
+    "estilo": "curto",
+    "classe": "berserker",
+    "genero": "m",
+    "tamanho": {
+      "w": 512,
+      "h": 488
+    }
+  },
+  "berserker_m_cabelo2": {
+    "cabeca": {
+      "x": 114,
+      "y": 17,
+      "w": 226,
+      "h": 130
+    },
+    "pes": {
+      "x": 221,
+      "y": 472
+    },
+    "estilo": "longo",
+    "classe": "berserker",
+    "genero": "m",
+    "tamanho": {
+      "w": 512,
+      "h": 492
+    }
+  },
+  "berserker_m_cabelo3": {
+    "cabeca": {
+      "x": 137,
+      "y": 16,
+      "w": 197,
+      "h": 145
+    },
+    "pes": {
+      "x": 221,
+      "y": 461
+    },
+    "estilo": "raspado",
+    "classe": "berserker",
+    "genero": "m",
+    "tamanho": {
+      "w": 512,
+      "h": 481
+    }
+  },
+  "berserker_f_cabelo1": {
+    "cabeca": {
+      "x": 141,
+      "y": 18,
+      "w": 184,
+      "h": 132
+    },
+    "pes": {
+      "x": 217,
+      "y": 481
+    },
+    "estilo": "curto",
+    "classe": "berserker",
+    "genero": "f",
+    "tamanho": {
+      "w": 512,
+      "h": 501
+    }
+  },
+  "berserker_f_cabelo2": {
+    "cabeca": {
+      "x": 107,
+      "y": 17,
+      "w": 214,
+      "h": 130
+    },
+    "pes": {
+      "x": 217,
+      "y": 474
+    },
+    "estilo": "longo",
+    "classe": "berserker",
+    "genero": "f",
+    "tamanho": {
+      "w": 512,
+      "h": 494
+    }
+  },
+  "berserker_f_cabelo3": {
+    "cabeca": {
+      "x": 111,
+      "y": 17,
+      "w": 211,
+      "h": 135
+    },
+    "pes": {
+      "x": 215,
+      "y": 493
+    },
+    "estilo": "rabo de cavalo",
+    "classe": "berserker",
+    "genero": "f",
+    "tamanho": {
+      "w": 507,
+      "h": 512
+    }
+  },
+  "druida_m_cabelo1": {
+    "cabeca": {
+      "x": 189,
+      "y": 45,
+      "w": 149,
+      "h": 141
+    },
+    "pes": {
+      "x": 231,
+      "y": 494
+    },
+    "estilo": "curto",
+    "classe": "druida",
+    "genero": "m",
+    "tamanho": {
+      "w": 504,
+      "h": 512
+    }
+  },
+  "druida_m_cabelo2": {
+    "cabeca": {
+      "x": 129,
+      "y": 43,
+      "w": 201,
+      "h": 141
+    },
+    "pes": {
+      "x": 226,
+      "y": 494
+    },
+    "estilo": "longo",
+    "classe": "druida",
+    "genero": "m",
+    "tamanho": {
+      "w": 498,
+      "h": 512
+    }
+  },
+  "druida_m_cabelo3": {
+    "cabeca": {
+      "x": 185,
+      "y": 28,
+      "w": 153,
+      "h": 142
+    },
+    "pes": {
+      "x": 231,
+      "y": 495
+    },
+    "estilo": "raspado",
+    "classe": "druida",
+    "genero": "m",
+    "tamanho": {
+      "w": 504,
+      "h": 512
+    }
+  },
+  "druida_f_cabelo1": {
+    "cabeca": {
+      "x": 168,
+      "y": 19,
+      "w": 156,
+      "h": 142
+    },
+    "pes": {
+      "x": 223,
+      "y": 496
+    },
+    "estilo": "curto",
+    "classe": "druida",
+    "genero": "f",
+    "tamanho": {
+      "w": 494,
+      "h": 512
+    }
+  },
+  "druida_f_cabelo2": {
+    "cabeca": {
+      "x": 133,
+      "y": 17,
+      "w": 183,
+      "h": 142
+    },
+    "pes": {
+      "x": 219,
+      "y": 492
+    },
+    "estilo": "longo",
+    "classe": "druida",
+    "genero": "f",
+    "tamanho": {
+      "w": 486,
+      "h": 512
+    }
+  },
+  "druida_f_cabelo3": {
+    "cabeca": {
+      "x": 127,
+      "y": 34,
+      "w": 188,
+      "h": 142
+    },
+    "pes": {
+      "x": 219,
+      "y": 495
+    },
+    "estilo": "rabo de cavalo",
+    "classe": "druida",
+    "genero": "f",
+    "tamanho": {
+      "w": 484,
+      "h": 512
+    }
+  },
+  "necromante_m_cabelo1": {
+    "cabeca": {
+      "x": 170,
+      "y": 55,
+      "w": 132,
+      "h": 127
+    },
+    "pes": {
+      "x": 221,
+      "y": 493
+    },
+    "estilo": "curto",
+    "classe": "necromante",
+    "genero": "m",
+    "tamanho": {
+      "w": 426,
+      "h": 512
+    }
+  },
+  "necromante_m_cabelo2": {
+    "cabeca": {
+      "x": 167,
+      "y": 55,
+      "w": 133,
+      "h": 138
+    },
+    "pes": {
+      "x": 220,
+      "y": 496
+    },
+    "estilo": "longo",
+    "classe": "necromante",
+    "genero": "m",
+    "tamanho": {
+      "w": 424,
+      "h": 512
+    }
+  },
+  "necromante_m_cabelo3": {
+    "cabeca": {
+      "x": 168,
+      "y": 62,
+      "w": 119,
+      "h": 109
+    },
+    "pes": {
+      "x": 220,
+      "y": 495
+    },
+    "estilo": "raspado",
+    "classe": "necromante",
+    "genero": "m",
+    "tamanho": {
+      "w": 424,
+      "h": 512
+    }
+  },
+  "necromante_f_cabelo1": {
+    "cabeca": {
+      "x": 173,
+      "y": 59,
+      "w": 128,
+      "h": 121
+    },
+    "pes": {
+      "x": 223,
+      "y": 494
+    },
+    "estilo": "curto",
+    "classe": "necromante",
+    "genero": "f",
+    "tamanho": {
+      "w": 423,
+      "h": 512
+    }
+  },
+  "necromante_f_cabelo2": {
+    "cabeca": {
+      "x": 135,
+      "y": 59,
+      "w": 166,
+      "h": 137
+    },
+    "pes": {
+      "x": 223,
+      "y": 494
+    },
+    "estilo": "longo",
+    "classe": "necromante",
+    "genero": "f",
+    "tamanho": {
+      "w": 423,
+      "h": 512
+    }
+  },
+  "necromante_f_cabelo3": {
+    "cabeca": {
+      "x": 158,
+      "y": 56,
+      "w": 143,
+      "h": 135
+    },
+    "pes": {
+      "x": 222,
+      "y": 496
+    },
+    "estilo": "rabo de cavalo",
+    "classe": "necromante",
+    "genero": "f",
+    "tamanho": {
+      "w": 424,
+      "h": 512
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "_meta": {
+    "imagem": "backgrounds/mapa_floresta.webp",
+    "tamanho": {
+      "w": 3840,
+      "h": 2160
+    },
+    "coords": "pixels no JPG final (origem no canto superior esquerdo)",
+    "fonte_marcacao": "render 1280x720 (x_fonte, y_fonte); escala 3x para o JPG final"
+  },
+  "pontos": [
+    {
+      "id": "vila",
+      "nome": "Vila da floresta",
+      "tipo": "vila",
+      "x": 3000,
+      "y": 1590,
+      "x_fonte": 1000,
+      "y_fonte": 530
+    },
+    {
+      "id": "portao_vila",
+      "nome": "Portão da vila / entrada da trilha",
+      "tipo": "entrada_trilha",
+      "x": 2580,
+      "y": 1500,
+      "x_fonte": 860,
+      "y_fonte": 500
+    },
+    {
+      "id": "ponte_sul",
+      "nome": "Ponte sul do rio",
+      "tipo": "entrada_trilha",
+      "x": 1680,
+      "y": 1740,
+      "x_fonte": 560,
+      "y_fonte": 580
+    },
+    {
+      "id": "ponte_central",
+      "nome": "Ponte central",
+      "tipo": "entrada_trilha",
+      "x": 1440,
+      "y": 1290,
+      "x_fonte": 480,
+      "y_fonte": 430
+    },
+    {
+      "id": "clareira_central",
+      "nome": "Clareira central",
+      "tipo": "clareira",
+      "x": 1800,
+      "y": 840,
+      "x_fonte": 600,
+      "y_fonte": 280
+    },
+    {
+      "id": "clareira_cogumelos",
+      "nome": "Clareira dos cogumelos",
+      "tipo": "clareira",
+      "x": 360,
+      "y": 1800,
+      "x_fonte": 120,
+      "y_fonte": 600
+    },
+    {
+      "id": "cachoeira",
+      "nome": "Cachoeira do recife",
+      "tipo": "clareira",
+      "x": 240,
+      "y": 420,
+      "x_fonte": 80,
+      "y_fonte": 140
+    },
+    {
+      "id": "entrada_trilha_norte",
+      "nome": "Entrada da trilha norte",
+      "tipo": "entrada_trilha",
+      "x": 600,
+      "y": 600,
+      "x_fonte": 200,
+      "y_fonte": 200
+    },
+    {
+      "id": "ruina_oeste",
+      "nome": "Ruínas do oeste (caminho lateral do mini-chefe)",
+      "tipo": "caminho_lateral",
+      "x": 840,
+      "y": 1320,
+      "x_fonte": 280,
+      "y_fonte": 440
+    },
+    {
+      "id": "ruina_arco",
+      "nome": "Arco de pedra / ruína central",
+      "tipo": "ruina",
+      "x": 2040,
+      "y": 1290,
+      "x_fonte": 680,
+      "y_fonte": 430
+    },
+    {
+      "id": "torre_quebrada",
+      "nome": "Torre quebrada",
+      "tipo": "ruina",
+      "x": 2640,
+      "y": 1020,
+      "x_fonte": 880,
+      "y_fonte": 340
+    },
+    {
+      "id": "bau_escondido_oeste",
+      "nome": "Baú escondido nos cogumelos",
+      "tipo": "bau",
+      "x": 240,
+      "y": 1440,
+      "x_fonte": 80,
+      "y_fonte": 480
+    },
+    {
+      "id": "bau_escondido_leste",
+      "nome": "Baú escondido nas árvores do leste",
+      "tipo": "bau",
+      "x": 3480,
+      "y": 600,
+      "x_fonte": 1160,
+      "y_fonte": 200
+    },
+    {
+      "id": "covil_driade",
+      "nome": "Covil da Dríade (caverna nas raízes)",
+      "tipo": "chefe",
+      "x": 2340,
+      "y": 600,
+      "x_fonte": 780,
+      "y_fonte": 200
+    }
+  ]
+}
