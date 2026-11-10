@@ -2,24 +2,126 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#14110e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Eldenforja" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./icones/icone-180.png" />
     <title>Eldenforja</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%2314110e' width='32' height='32'/%3E%3Cpath fill='%239aa3ad' d='M4 14h24l-2 3H6zm2 3h20l-3 4H9zm1 4h18v3H7z'/%3E%3Cpath fill='%23ff6a1a' d='M15 8h2v6h-2z'/%3E%3C/svg%3E" />
     <style>
       html,
-      body,
-      #jogo {
+      body {
         margin: 0;
         padding: 0;
         width: 100%;
         height: 100%;
         background: #14110e;
         overflow: hidden;
+        overscroll-behavior: none;
+        touch-action: none;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* O jogo fica fora do entalhe e da barra de gestos. */
+      #jogo {
+        position: fixed;
+        top: env(safe-area-inset-top, 0px);
+        right: env(safe-area-inset-right, 0px);
+        bottom: env(safe-area-inset-bottom, 0px);
+        left: env(safe-area-inset-left, 0px);
+        background: #14110e;
+        overflow: hidden;
+      }
+      #jogo,
+      #jogo canvas {
+        touch-action: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+      }
+      /* Campos de texto do jogo (nome, e-mail): o toque aqui é do teclado. */
+      input {
+        touch-action: manipulation;
+        -webkit-user-select: text;
+        user-select: text;
+      }
+      #girar {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 50;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        padding: 24px;
+        text-align: center;
+        background: radial-gradient(circle at 50% 40%, #3a2416 0%, #14110e 70%);
+        color: #f3e2c2;
+        font-family: Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
+      }
+      #girar .aparelho {
+        width: 64px;
+        height: 108px;
+        border: 5px solid #e6b15a;
+        border-radius: 14px;
+        box-shadow: 0 0 24px #ff6a1a66;
+        animation: girar 2.4s ease-in-out infinite;
+      }
+      #girar .aparelho::after {
+        content: '';
+        display: block;
+        width: 18px;
+        height: 4px;
+        margin: 90px auto 0;
+        border-radius: 2px;
+        background: #e6b15a;
+      }
+      #girar h1 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: normal;
+        letter-spacing: 2px;
+      }
+      #girar p {
+        margin: 0;
+        max-width: 300px;
+        font: 17px/1.45 Verdana, 'Liberation Sans', 'DejaVu Sans', sans-serif;
+        color: #cbbba0;
+      }
+      #girar p b {
+        color: #ffc14a;
+      }
+      @keyframes girar {
+        0%, 20% { transform: rotate(0deg); }
+        50%, 80% { transform: rotate(-90deg); }
+        100% { transform: rotate(0deg); }
+      }
+      /* Celular em pé: o jogo é deitado, então pede para girar. */
+      @media (orientation: portrait) and (pointer: coarse) {
+        #girar {
+          display: flex;
+        }
+      }
+      @media (orientation: portrait) {
+        html.toque #girar {
+          display: flex;
+        }
       }
     </style>
-    <script type="module" crossorigin src="/eldenforja-jogo/assets/index-CgOIe_ge.js"></script>
+    <script type="module" crossorigin src="/eldenforja-jogo/assets/index-BN5dWnbI.js"></script>
   </head>
   <body>
     <div id="jogo"></div>
+    <div id="girar" role="alert" aria-live="polite">
+      <div class="aparelho" aria-hidden="true"></div>
+      <h1>Gire o celular</h1>
+      <p>Eldenforja se joga com o aparelho <b>deitado</b>. Vire a tela para a forja acender.</p>
+    </div>
   </body>
 </html>
