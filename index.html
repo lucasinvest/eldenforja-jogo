@@ -50,6 +50,94 @@
         -webkit-user-select: text;
         user-select: text;
       }
+      /* Tela de carregamento: aparece no primeiro quadro, antes do JavaScript. */
+      #carga {
+        position: fixed;
+        inset: 0;
+        z-index: 40;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 24px;
+        background:
+          radial-gradient(ellipse at 50% 62%, #5a2a12 0%, #2a160c 38%, #14110e 75%);
+        color: #f3e2c2;
+        font-family: Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.25s ease-out;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      #carga.troca {
+        background: radial-gradient(ellipse at 50% 62%, #3a1d0eee 0%, #14110ef2 70%);
+      }
+      #carga.saindo {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #carga .bigorna {
+        width: 76px;
+        height: 54px;
+        filter: drop-shadow(0 0 18px #ff6a1a88);
+        animation: pulsar 1.6s ease-in-out infinite;
+      }
+      #carga h1 {
+        margin: 0;
+        font-size: clamp(34px, 7vw, 64px);
+        font-weight: bold;
+        letter-spacing: 0.08em;
+        color: #f6dca6;
+        text-shadow: 0 3px 0 #3a2010, 0 0 22px #ff6a1a66;
+      }
+      #carga.troca h1 {
+        font-size: clamp(26px, 4.5vw, 40px);
+      }
+      #carga .moldura {
+        width: min(440px, 72vw);
+        height: 20px;
+        padding: 3px;
+        border: 3px solid #b8863a;
+        border-radius: 12px;
+        background: #1a0f08;
+        box-shadow: 0 0 0 2px #3a2010, inset 0 2px 6px #000a;
+        box-sizing: border-box;
+        overflow: hidden;
+      }
+      #carga-barra {
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+        background: linear-gradient(90deg, #c2410c, #ff8a2a 60%, #ffd27a);
+        box-shadow: 0 0 12px #ff8a2a;
+        transform-origin: left center;
+        transform: scaleX(0.04);
+        transition: transform 0.2s ease-out;
+      }
+      #carga.indefinida #carga-barra {
+        animation: brilhar 1.2s ease-in-out infinite alternate;
+      }
+      #carga .linha {
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+        font: 17px/1.4 Verdana, 'Liberation Sans', 'DejaVu Sans', sans-serif;
+        color: #e8d3ad;
+      }
+      #carga-numero {
+        min-width: 3.2em;
+        color: #ffc14a;
+        font-weight: bold;
+      }
+      @keyframes pulsar {
+        50% { filter: drop-shadow(0 0 30px #ff8a2acc); transform: translateY(-2px); }
+      }
+      @keyframes brilhar {
+        from { transform: scaleX(0.06); }
+        to { transform: scaleX(0.12); }
+      }
       #girar {
         display: none;
         position: fixed;
@@ -114,11 +202,17 @@
         }
       }
     </style>
-    <script type="module" crossorigin src="/eldenforja-jogo/assets/index-BEpBYQZO.js"></script>
+    <script type="module" crossorigin src="/eldenforja-jogo/assets/index-DlHBNVXI.js"></script>
     <link rel="modulepreload" crossorigin href="/eldenforja-jogo/assets/phaser-B61OQUcB.js">
   </head>
   <body>
     <div id="jogo"></div>
+    <div id="carga" class="indefinida" role="progressbar" aria-label="Carregando o jogo">
+      <svg class="bigorna" viewBox="0 0 32 22" aria-hidden="true"><path fill="#ff6a1a" d="M15 0h2v5h-2z"/><path fill="#9aa3ad" d="M1 6h30l-3 4H5zm4 4h22l-3 5H9zm2 5h18v4H7z"/><path fill="#5b6470" d="M5 19h22v3H5z"/></svg>
+      <h1>ELDENFORJA</h1>
+      <div class="moldura"><div id="carga-barra"></div></div>
+      <div class="linha"><span id="carga-texto">Acendendo a forja…</span><span id="carga-numero"></span></div>
+    </div>
     <div id="girar" role="alert" aria-live="polite">
       <div class="aparelho" aria-hidden="true"></div>
       <h1>Gire o celular</h1>
